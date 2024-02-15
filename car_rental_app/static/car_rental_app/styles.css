@@ -1,0 +1,219 @@
+* {
+    font-family: calibri;
+}
+body{
+ width: 100%;
+ height: 100%;
+ overflow-x: hidden;
+}
+
+.over-vid {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000db;
+    display: grid;
+}
+
+.over-vid .basic-info {
+    height: 4em;
+    width: 70%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 19px;
+    justify-content: space-evenly;
+    gap: 50px;
+    /* background: red */
+}
+
+.over-vid .basic-info div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.over-vid .basic-info div i {
+    margin: 0 20px 0 0;
+}
+
+
+.over-vid .over-vid-001 {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.need-a-car {
+    width: 100%;
+    font-size: 55px;
+    font-weight: bolder;
+    color: white;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.request-now {
+    font-size: 23px;
+    font-weight: normal;
+    color: white;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border: 1px solid rebeccapurple;
+    border-radius: 15px;
+    padding: 12px;
+    box-shadow: 0 0 0 0 black;
+    width: 259px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.over-vid .over-vid-002 {
+    position: absolute;
+    width: 100%;
+    height: 6em;
+    bottom: 16%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.over-vid .over-vid-002 button {
+    width: 14em;
+    height: 50px;
+    border-radius: 9px;
+    border: 1px;
+}
+
+.two-equal-col {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 30px 0;
+}
+
+.two-equal-col .col-1 {
+    font-size: 40px;
+    padding: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.two-equal-col .col-2 {
+    font-size: 23px;
+    padding: 30px;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+.two-equal-col .col-2 div {
+    font-size: 23px;
+    padding: 30px;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+.product-3-col{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    padding: 0 30px;
+    gap: 70px;
+}
+
+.product-3-col .product-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: 30px
+}
+
+.product-3-col .product-cont .product{
+    width: 100%;
+    height: 34em;
+    background-color: blueviolet;
+}
+
+.product-3-col .product-cont .label{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: 10px
+}
+
+.product-3-col .product-cont .label .text{
+    font-size: 23px;
+}
+
+.product-3-col .product-cont .label .rating{
+    color: gold
+}
+
+
+.r-003{
+    /* background-color: burlywood; */
+    padding: 100px 30px 30px 30px;
+}
+
+
+.r-003 .large{
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+
+.r-003 .small{
+    font-size: 23px;
+    text-transform: uppercase;
+    margin: 8px 0 50px 6px;
+    letter-spacing: 5px;
+    font-weight: lighter;
+}
+
+.r-003 .three-col{
+    display: flex;
+    justify-content: flex-end;
+    gap: 139px;
+    margin: 30px 0 0 0;
+}
+
+.r-003 .three-col .col{
+    display: flex;
+    flex-direction: column;
+    width: 26em;
+    gap: 40px;
+}
+
+.r-003 .three-col .col .row{
+    display: flex;
+    flex-direction: column;
+    /* background: red; */
+}
+
+.r-003 .three-col .col .row .large{
+    font-size: 27px;
+    letter-spacing: 0;
+    text-transform: capitalize;
+}
+
+.r-003 .three-col .col .row .small{
+    font-size: 18px;
+    letter-spacing: 0;
+    text-transform: none;
+    margin: 12px 0 0 1px;
+    letter-spacing: 1px;
+}
