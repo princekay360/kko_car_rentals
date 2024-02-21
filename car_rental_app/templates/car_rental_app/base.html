@@ -5,9 +5,17 @@
     <link href="{% static 'car_rental_app/fa/allicons.css' %}" rel="stylesheet">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="{% static 'car_rental_app/css/sidenav.css' %}" rel="stylesheet"/>
+
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <style>
+
+    </style>
+
+
 </head>
+
 
 <header class="header">
     <div class="title">KKO Car Rentals</div>
@@ -19,6 +27,46 @@
         <div class="nav-item">shop</div>
     </div>
     <div>
-
+        <div class="menu-btn" onclick="openNav('lnd')"><i class="fa-regular fa-bars" style="color:white"></i></div>
     </div>
 </header>
+<div id="nav-wrapper" onclick="closeNav('lnd')"></div>
+<LeftNavDrawer id="lnd">
+    <NavListItems>
+        <ListItem>
+            <Icon><i class="fa-light fa-home"></i></Icon>
+            <Name>Home</Name>
+        </ListItem>
+        <ListItem class="hasdrop">
+            <Icon><i class="fa-light fa-info-circle"></i></Icon>
+            <Name>Resources</Name>
+            <drop>
+                <ul>
+                    <li></li>
+                    <li>Leaders</li>
+                    <li>Tenets</li>
+                    <li>Theme</li>
+                    <li>Any</li>
+                </ul>
+            </drop>
+        </ListItem>
+        <ListItem>
+            <Icon><i class="fa-light fa-hands-holding-dollar"></i></Icon>
+            <Name>Vehicle Fleet</Name>
+        </ListItem>
+        <ListItem>
+            <Icon><i class="fa-light fa-calendar"></i></Icon>
+            <Name>Blog</Name>
+        </ListItem>
+        <ListItem>
+            <Icon><i class="fa-light fa-newspaper"></i></Icon>
+            <Name>Shop</Name>
+        </ListItem>
+        <button
+                style="color: white; border: 0px; background-color: #214375; margin: 0 0 0 10px; position: absolute; bottom:30px; width: 90%; height: 40px; border-radius: 6px;">
+            Login
+        </button>
+    </NavListItems>
+</LeftNavDrawer>
+
+<script src="{% static 'car_rental_app/js/sidenav.js' %}"></script>
